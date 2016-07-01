@@ -1,9 +1,9 @@
 {
-  "name": "gitbook-plugin-numbered-headings",
-  "description": "Include numbered headings in your GitBook PDFs",
+  "name": "gitbook-plugin-numbered-headings-for-web-and-books",
+  "description": "Include numbered headings in your GitBook PDFs and Website",
   "main": "index.js",
-  "version": "1.1.1",
+  "version": "0.1.0",
   "engines": {
-    "gitbook": ">=2.4.0"
+    "gitbook": ">=3.0.0"
   }
 }

@@ -7,6 +7,12 @@ var RESET_TEMPLATE = [
 ].join('\n') + '\n';
 
 module.exports = {
+  website: {
+    assets: './assets',
+    css: [
+      'numbered-headings-website.css'
+    ]
+  },
   ebook: {
     assets: './assets',
     css: [
@@ -15,9 +21,10 @@ module.exports = {
   },
   hooks: {
     'page:before': function(page) {
-      var sectionNum = page.progress.current.index - 1;
+      var sectionNum = page.progress.current.index;
       var counterReset = RESET_TEMPLATE.replace(/SECTION_NUM/, sectionNum);
       page.content = counterReset + page.content;
+
       return page;
     }
   }
